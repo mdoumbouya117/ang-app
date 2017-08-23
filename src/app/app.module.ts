@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 // import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-/*import {
+import {
   MaterialModule,
   MdNativeDateModule,
   MdDatepickerModule,
   MdTableModule,
-  MdInputModule} from '@angular/material';*/
+  MdInputModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { LoginFormComponent } from './login-form/login-form.component';
@@ -24,13 +24,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    /*FormsModule, ReactiveFormsModule,
+    // FormsModule, ReactiveFormsModule,
     MaterialModule,
     MdNativeDateModule,
     MdDatepickerModule,
     MdTableModule,
-    MdInputModule,*/
-    // FlexLayoutModule,
+    MdInputModule,
+    FlexLayoutModule,
     BrowserAnimationsModule
   ],
   providers: [],
