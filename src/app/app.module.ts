@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   MaterialModule,
   MdNativeDateModule,
@@ -12,19 +12,19 @@ import {
   MdInputModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { LoginFormComponent } from './login-form/login-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 // import { PhonePipe } from './shared/pipes/phone/phone.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    // LoginFormComponent,
+    LoginFormComponent
    // PhonePipe
   ],
   imports: [
     BrowserModule,
-    // FormsModule, ReactiveFormsModule,
+    FormsModule, ReactiveFormsModule,
     MaterialModule,
     MdNativeDateModule,
     MdDatepickerModule,

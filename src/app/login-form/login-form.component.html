@@ -1,0 +1,40 @@
+<section class="section-form" fxFlex="450px" fxLayout="column" fxLayoutAlign="space-around end">
+    <!-- 
+         fxFlex fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+        -->
+    <form  [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)" class="form">
+
+        <div fxLayout="row" fxLayoutAlign="space-between stretch">
+            <md-input-container fxFlex="48%">
+                <input mdInput formControlName="firstName" placeholder="Frirt name" type="text">
+            </md-input-container>
+            <!--<span class="alert">Test</span>-->
+            
+            <md-input-container fxFlex="48%">
+                <input mdInput formControlName="name" placeholder="Name" type="text">
+            </md-input-container>
+        </div>
+
+        <div fxLayout="column">
+            <md-input-container>
+                <input mdInput formControlName="email" placeholder="Email" type="email">
+            </md-input-container>
+    
+            <md-input-container>
+                <input mdInput formControlName="phone" placeholder="Phone" type="text">
+            </md-input-container>
+            
+            <md-input-container>
+                <input mdInput formControlName="password" placeholder="Password" type="password">
+            </md-input-container>
+        </div>
+
+        <div>
+            <button md-button [disabled]="!loginForm.valid" class="submit-btn" type="button">Login!</button>
+        </div>
+        <!--<div>
+            <input type="submit" value="validate" [disabled]="!loginForm.valid">
+        </div>-->
+
+    </form>
+</section>
