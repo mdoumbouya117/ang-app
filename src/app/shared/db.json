@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "first_name": "Mohamed",
+            "name": "Doumbouya",
+            "email": "mohamed@dev.fr"
+        },
+        {
+            "id": 2,
+            "first_name": "Jean",
+            "name": "Melanchon",
+            "email": "jean@dev.fr"
+        },
+        {
+            "id": 3,
+            "first_name": "David",
+            "name": "Druheau",
+            "email": "david@dev.fr"
+        }
+    ]
+}
